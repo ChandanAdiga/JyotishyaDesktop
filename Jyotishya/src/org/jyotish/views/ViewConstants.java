@@ -16,19 +16,9 @@ final class ViewConstants {
 	
 	public static final String ABOUT_APP_BUILD_DATE="9th April 2012";
 	
-	public static final String ABOUT_APP_CLIENT=
-		"\n\t Manjunath Adiga"
-		+"\n\t Saradamane"
-		+"\n\t Karagadi, Haniya[P]"
-		+"\n\t Hosanagara[Tq]";
+	public static final String ABOUT_APP_CLIENT="Public";
 	
-	public static final String ABOUT_APP_DEVELOPER=
-		"\n\t Chandan Adiga"
-		+"\n\t Saradamane"
-		+"\n\t Karagadi, Haniya[P]"
-		+"\n\t Hosanagara[Tq]"
-		+"\n\t Mobile : +91 9611875556"
-		+"\n\t eMail  : adigachandan@gmail.com";
+	public static final String ABOUT_APP_DEVELOPER="JavaGem";
 	
 	/**
 	 * Screen's initial x-coordinate positioning 
