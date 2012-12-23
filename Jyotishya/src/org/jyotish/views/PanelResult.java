@@ -56,6 +56,7 @@ final class PanelResult extends JPanel {
 	
 	private static final int SCROLL_PANEL_HEIGHT=ViewConstants.TAB_COMPONENT_HEIGHT-40;
 	
+	@SuppressWarnings("unused")
 	private final JScrollPane mScrollPaneContainer=new JScrollPane();
 	
 	private final JPanel mPanelGridParent = new JPanel();

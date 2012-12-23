@@ -1,19 +1,15 @@
 package org.jyotish.views;
 
 import javax.swing.JButton;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.SpringLayout;
-
 import org.chandan.java.logging.LogManager;
 import org.chandan.java.logging.LogType;
 import org.jyotish.models.ModelConstants;
 import org.jyotish.observers.ActionListener;
 import org.jyotish.views.Dialog.ApplicatinDialog;
 import org.jyotish.views.ViewConstants.BUTTON_NAMES;
-
-import java.awt.TextArea;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseAdapter;
 
