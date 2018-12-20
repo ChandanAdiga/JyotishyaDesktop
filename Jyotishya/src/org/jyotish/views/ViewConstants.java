@@ -33,12 +33,12 @@ final class ViewConstants {
 	/**
 	 * Screen's width
 	 */
-	public static final short WINDOW_SCREEN_FRAME_WIDTH=800;
+	public static final short WINDOW_SCREEN_FRAME_WIDTH=1000;
 	
 	/**
 	 * Screen's height
 	 */
-	public static final short WINDOW_SCREEN_FRAME_HEIGHT=500;
+	public static final short WINDOW_SCREEN_FRAME_HEIGHT=800;
 	
 	/**
 	 * Horizontal gap
@@ -109,12 +109,12 @@ final class ViewConstants {
 	/**
 	 * Tab Screen's height
 	 */
-	public static final short TAB_COMPONENT_HEIGHT=WINDOW_SCREEN_FRAME_HEIGHT-40;
+	public static final short TAB_COMPONENT_HEIGHT=WINDOW_SCREEN_FRAME_HEIGHT-100;
 	
 	/**
 	 * Screen's width
 	 */
-	public static final short CONTROL_BUTTON_PANEL_WIDTH=TAB_COMPONENT_WIDTH-40;
+	public static final short CONTROL_BUTTON_PANEL_WIDTH=WINDOW_SCREEN_FRAME_WIDTH-40;
 	
 	/**
 	 * Screen's height

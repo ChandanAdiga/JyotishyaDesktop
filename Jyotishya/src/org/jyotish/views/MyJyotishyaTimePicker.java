@@ -44,7 +44,7 @@ public final class MyJyotishyaTimePicker extends JPanel {
 	/**
 	 * DateView's height
 	 */
-	private static final short DATEVIEW_PANEL_HEIGHT=30;
+	private static final short DATEVIEW_PANEL_HEIGHT=50;
 	
 	/**
 	 * Invalid selected time attributes.
@@ -128,8 +128,8 @@ public final class MyJyotishyaTimePicker extends JPanel {
 		mVigaligePicker=new JComboBox<String>(mVigaligeModel);
 		mGaligePicker=new JComboBox<String>(mGaligeModel);
 		
-		mVigaligePicker.setPreferredSize(new Dimension(75, DATEVIEW_PANEL_HEIGHT-8));
-		mGaligePicker.setPreferredSize(new Dimension(70, DATEVIEW_PANEL_HEIGHT-8));
+		mVigaligePicker.setPreferredSize(new Dimension(100, DATEVIEW_PANEL_HEIGHT-8));
+		mGaligePicker.setPreferredSize(new Dimension(100, DATEVIEW_PANEL_HEIGHT-8));
 		
 		mVigaligePicker.setMaximumRowCount(5);
 		mGaligePicker.setMaximumRowCount(5);

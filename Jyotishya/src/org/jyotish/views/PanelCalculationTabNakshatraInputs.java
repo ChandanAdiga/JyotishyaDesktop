@@ -316,7 +316,7 @@ final class PanelCalculationTabNakshatraInputs extends JPanel implements ActionL
 			springLayout5.putConstraint(SpringLayout.NORTH, mOperationPicker, 4, SpringLayout.NORTH, panelOperationInput);
 			springLayout5.putConstraint(SpringLayout.WEST, mOperationPicker, 76, SpringLayout.EAST, mLabelOperation);
 			springLayout5.putConstraint(SpringLayout.NORTH, mLabelOperation, -4, SpringLayout.NORTH, mOperationPicker);
-			mOperationPicker.setPreferredSize(new Dimension(75, 22));
+			mOperationPicker.setPreferredSize(new Dimension(150, 22));
 		panelOperationInput.setLayout(springLayout5);
 		panelOperationInput.add(mLabelOperation);
 		panelOperationInput.add(mOperationPicker);

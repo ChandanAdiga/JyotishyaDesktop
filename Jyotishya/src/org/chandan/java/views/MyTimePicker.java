@@ -39,7 +39,7 @@ public final class MyTimePicker extends JPanel {
 	/**
 	 * DateView's width
 	 */
-	private static final short DATEVIEW_PANEL_WIDTH=330;
+	private static final short DATEVIEW_PANEL_WIDTH=400;
 	
 	/**
 	 * DateView's height
@@ -212,10 +212,10 @@ public final class MyTimePicker extends JPanel {
 		mHourPicker=new JComboBox<String>(mHourModel);
 		mAmPmPicker=new JComboBox<String>(mAmPmModel);
 		
-		mSeondsPicker.setPreferredSize(new Dimension(75, DATEVIEW_PANEL_HEIGHT-8));
-		mMinutePicker.setPreferredSize(new Dimension(70, DATEVIEW_PANEL_HEIGHT-8));
-		mHourPicker.setPreferredSize(new Dimension(60, DATEVIEW_PANEL_HEIGHT-8));
-		mAmPmPicker.setPreferredSize(new Dimension(45, DATEVIEW_PANEL_HEIGHT-8));
+		mSeondsPicker.setPreferredSize(new Dimension(100, DATEVIEW_PANEL_HEIGHT-8));
+		mMinutePicker.setPreferredSize(new Dimension(100, DATEVIEW_PANEL_HEIGHT-8));
+		mHourPicker.setPreferredSize(new Dimension(100, DATEVIEW_PANEL_HEIGHT-8));
+		mAmPmPicker.setPreferredSize(new Dimension(80, DATEVIEW_PANEL_HEIGHT-8));
 		
 		mSeondsPicker.setMaximumRowCount(5);
 		mMinutePicker.setMaximumRowCount(5);

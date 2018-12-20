@@ -58,3 +58,19 @@ JyotishyaDesktop
 	Happy programming :)	
 		
 		
+====================================================================================================
+
+## Screenshots:
+
+### Screen: User inputs.
+<img src="Screenshot1.png" alt="" class="inline"/>
+
+====================================================================================================
+
+### Screen: Inputs for Nakshatra calculation.
+<img src="Screenshot2.png" alt="" class="inline"/>
+
+====================================================================================================
+
+### Screen: Sample results.
+<img src="Screenshot3.png" alt="" class="inline"/>
