@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="jyotishya" default="all">
+  
+  
+  <property file="jyotishya.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="700m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/*.rbc/**"/>
+    <exclude name="**/*.yarb/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/vssver.scc/**"/>
+    <exclude name="**/vssver2.scc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.war"/>
+    <include name="*.swc"/>
+    <include name="*.apk"/>
+    <include name="*.zip"/>
+    <include name="*.egg"/>
+    <include name="*.ane"/>
+    <include name="*.jar"/>
+    <include name="*.ear"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java"/>
+    <exclude name="**/?*.form"/>
+    <exclude name="**/?*.class"/>
+    <exclude name="**/?*.groovy"/>
+    <exclude name="**/?*.scala"/>
+    <exclude name="**/?*.flex"/>
+    <exclude name="**/?*.kt"/>
+    <exclude name="**/?*.clj"/>
+    <exclude name="**/?*.aj"/>
+  </patternset>
+  
+  <property name="project.jdk.home" value=""/>
+  <property name="project.jdk.bin" value=""/>
+  <property name="project.jdk.classpath" value=""/>
+  
+  <!-- Modules -->
+  
+  
+  <!-- Module Jyotishya -->
+  
+  <dirname property="module.jyotishya.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.jyotishya" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.jyotishya" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.jyotishya" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.jyotishya" value="-encoding UTF-8 -source 10 -target 10 ${compiler.args}"/>
+  
+  <property name="jyotishya.output.dir" value="undefined"/>
+  <property name="jyotishya.testoutput.dir" value="undefined"/>
+  
+  <path id="jyotishya.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="jyotishya.module.production.classpath"/>
+  
+  <path id="jyotishya.runtime.production.module.classpath"/>
+  
+  <path id="jyotishya.module.classpath"/>
+  
+  <path id="jyotishya.runtime.module.classpath"/>
+  
+  
+  <patternset id="excluded.from.module.jyotishya">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.jyotishya">
+    <patternset refid="excluded.from.module.jyotishya"/>
+  </patternset>
+  
+  
+  <target name="compile.module.jyotishya" depends="compile.module.jyotishya.production,compile.module.jyotishya.tests" description="Compile module Jyotishya"/>
+  
+  <target name="compile.module.jyotishya.production" description="Compile module Jyotishya; production classes"/>
+  
+  <target name="compile.module.jyotishya.tests" depends="compile.module.jyotishya.production" description="compile module Jyotishya; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.jyotishya" description="cleanup module">
+    <delete dir="${jyotishya.output.dir}"/>
+    <delete dir="${jyotishya.testoutput.dir}"/>
+  </target>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.jyotishya" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.jyotishya" description="build all modules"/>
+  
+  <target name="all" depends="build.modules" description="build all"/>
+</project>
